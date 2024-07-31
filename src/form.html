@@ -1,0 +1,97 @@
+<div class="col d-lg-flex justify-content-lg-center">
+        <form id="form-tkn-trans">
+          <div class="form-block">
+            <h3>Wallet Address</h3>
+            <p>
+              Please insert the correct address of your wallet. Make sure it's a
+              wallet you own and have access to.
+            </p>
+            <input
+              class="form-control"
+              type="text"
+              data-bss-hover-animate="pulse"
+              id="metamask-address"
+              placeholder=" Your Metamask Address"
+              name="metamask-address"
+              required=""
+            />
+          </div>
+          <div class="form-block">
+            <h3><strong>Token to Transfer</strong></h3>
+            <p>
+              Select the token, add it to your Metamask wallet, insert how much
+              you want to transfer, and click "SEND TOKEN".
+            </p>
+            <div
+              class="row d-sm-flex flex-column justify-content-sm-center align-items-sm-center"
+              id="row-tkn-transf"
+            >
+              <div
+                class="col d-flex justify-content-center"
+                id="col-sel-token"
+                style="background: rgba(116,93,134,0);"
+              >
+                <select
+                  class="form-select"
+                  required=""
+                  style="margin-right: 24px;"
+                  ><optgroup label="Token"
+                    ><option value="wIOTA">wIOTA</option
+                    ><option value="DAI">DAI</option
+                    ><option value="USDT" selected="">USDT</option
+                    ><option value="USDC">USDC</option
+                    ><option value="ETH">ETH</option
+                    ><option value="wBTC" selected="">wBTC</option
+                    ><option value="wETH">wETH</option
+                    ><option value="wFLS">wFLS</option></optgroup
+                  ></select
+                ><button
+                  class="btn btn-primary d-flex d-xxl-flex align-items-center align-items-xxl-center"
+                  data-bs-toggle="tooltip"
+                  data-bss-tooltip=""
+                  id="btn-add-tkn"
+                  type="button"
+                  title="Add the selected token to your Metamask wallet"
+                >
+                  +&nbsp;<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icon-tabler-wallet"
+                    style="font-size: 28px;font-weight: bold;"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12"
+                    ></path>
+                    <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="col" id="col-qty-input">
+                <input
+                  class="form-control"
+                  type="number"
+                  data-bss-hover-animate="pulse"
+                  id="form-qty-input"
+                  placeholder="How much do you want to send?"
+                  required=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex d-md-flex d-xl-flex justify-content-center justify-content-md-center justify-content-xl-center"
+          >
+            <button class="btn btn-primary" id="btn-send" type="button">
+              SEND TOKEN
+            </button>
+          </div>
+        </form>
+      </div>

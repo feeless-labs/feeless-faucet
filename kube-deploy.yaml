@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: feeless-faucet
+  labels:
+    app: feeless-faucet
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: feeless-faucet
+  template:
+    metadata:
+      labels:
+        app: feeless-faucet
+    spec:
+      containers:
+      - name: feeless-faucet
+        image: webrobot2022/feeless-faucet
+        ports:
+        - containerPort: 80
